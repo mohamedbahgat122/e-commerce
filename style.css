@@ -1,0 +1,855 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 100px auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navleft {
+    text-transform: uppercase;
+    padding-left: 60px;
+    transition: 0.5s;
+}
+
+.navleft:hover {
+    transform: scale(1.5);
+}
+
+.navleft a {
+    text-decoration: none;
+    color: #DB4444;
+    font-size: 25px;
+    font-weight: bolder;
+    word-spacing: 15px;
+}
+
+.navright {
+    text-transform: capitalize;
+    padding-right: 60px;
+}
+
+.navright ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navright ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+
+
+.navright ul a:hover {
+    border-bottom: 1px solid red;
+
+
+}
+
+.menu {
+
+    padding-right: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu input {
+    padding: 10px;
+    width: 170px;
+    padding-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    outline: none;
+
+}
+
+.menua {
+    position: absolute;
+    left: 60%;
+    top: 10px;
+    opacity: 0.5;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menuz {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+header img {
+    width: 100%;
+}
+
+.text {
+    font-size: 25px;
+    padding-left: 100px;
+    padding-top: 100px;
+
+}
+
+.text i {
+    font-size: 60px;
+    display: inline;
+
+}
+
+.text p {
+    font-size: 40px;
+    display: inline;
+
+}
+
+.text h4 {
+    width: 150px;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-size: 26px;
+}
+
+.text button {
+    background-color: #DB4444;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+    cursor: pointer;
+    width: 120px;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+
+.text button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+
+
+
+h2 {
+    margin-top: 170px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #DB4444;
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+
+h3 {
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+.prodects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+
+}
+
+.aa p {
+    background-color: #DB4444;
+    border-radius: 20px;
+    width: max-content;
+    padding: 10px;
+    position: relative;
+
+}
+
+.aa i {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    top: 5%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: max-content;
+    cursor: pointer;
+
+}
+
+.prodect {
+    background-color: #F5F5F5;
+    width: 300px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.373);
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.prodect:hover {
+    transform: scale(1.1);
+    margin: 20px;
+}
+
+.prodect>* {
+    padding-bottom: 20px;
+}
+
+.prodect img {
+    width: 100%;
+}
+
+.hh {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.zz {
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+.icon {
+    color: #FFAD33;
+}
+
+.view {
+    margin-top: 60px;
+    position: absolute;
+    top: 100%;
+
+}
+
+.view button {
+    background-color: #DB4444;
+    color: aliceblue;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    transition: 0.5s;
+}
+
+.view button:hover {
+    transform: scale(1.2);
+
+}
+
+.catagorys {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.catagory {
+    border: 0.5px solid rgba(0, 0, 0, 0.651);
+    width: 300px;
+    height: 120px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.catagory i {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.catagory p {
+    padding-top: 20px;
+    font-size: 23px;
+}
+
+.catagoryy {
+    background-color: #DB4444;
+    border: 0.5px solid rgba(0, 0, 0, 0.651);
+    width: 300px;
+    height: 120px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.catagoryy i {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.catagoryy p {
+    padding-top: 20px;
+    font-size: 23px;
+    color: aliceblue;
+}
+
+.prodectss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+
+}
+
+
+.aa i {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    top: 5%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: max-content;
+    cursor: pointer;
+
+}
+
+.prodectt {
+    background-color: rgb(242, 109, 109);
+    width: 20%;
+    padding: 10px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.373);
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.prodectt:hover {
+    transform: scale(1.1);
+    margin: 20px;
+}
+
+.prodectt>* {
+    padding-bottom: 20px;
+}
+
+.prodectt img {
+    width: 100%;
+}
+
+.hh {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.zz {
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+.icon {
+    color: rgb(255, 255, 255);
+}
+
+.view {
+    margin-top: 60px;
+    position: absolute;
+    top: 100%;
+
+}
+
+.view button {
+    background-color: #DB4444;
+    color: aliceblue;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    transition: 0.5s;
+}
+
+.iconn {
+    color: #FFAD33;
+}
+
+.view button:hover {
+    transform: scale(1.2);
+
+}
+
+.Featureds {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fett {
+    background-color: #000000;
+    height: 490px;
+    box-shadow: 1px 1px 1px 1px gray;
+    width: 48%;
+    position: relative;
+}
+
+.fett img {
+    width: 100%;
+    height: 100%;
+}
+
+.fett h4 {
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    color: #F5F5F5;
+}
+
+.fett h5 {
+    width: 250px;
+    position: absolute;
+    top: 86%;
+    left: 3%;
+    color: #F5F5F5;
+}
+
+.fett h6 {
+    width: 250px;
+    position: absolute;
+    top: 93%;
+    left: 3%;
+    color: #F5F5F5;
+    text-decoration: underline;
+
+}
+
+.fettt {
+    width: max-content;
+    margin: auto;
+    background-color: #000000;
+    height: max-content;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+.fettt img {
+    width: 100%;
+}
+
+.fettt h4 {
+    position: absolute;
+    color: #F5F5F5;
+    top: 70%;
+    left: 3%;
+
+}
+
+.fettt h5 {
+    width: 300px;
+    position: absolute;
+    color: #ffffff;
+    top: 80%;
+    left: 3%;
+}
+
+.fettt h6 {
+    position: absolute;
+    color: #ffffff;
+    top: 93%;
+    left: 3%;
+    text-decoration: underline;
+}
+
+.contactus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactleft iframe {
+    height: 500px;
+    width: 500px;
+}
+
+.contactright form h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contactright form input {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.contactright form textarea {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.contactright form button {
+    background-color: #DB4444;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 20px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+
+}
+
+
+.endd i {
+    margin-left: 40%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 10px;
+    width: max-content;
+
+}
+
+.endd h4 {
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.endd h6 {
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 50px;
+
+}
+
+.foots {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.foot {
+    width: 100%;
+    color: #F5F5F5;
+
+}
+
+.foot h1 {
+    font-size: 20px;
+}
+
+.foot p {
+    font-size: 16px;
+}
+
+
+
+.foot>* {
+    margin-bottom: 20px;
+}
+
+.foot h1.paaa {
+    font-size: 40px;
+    color: #DB4444;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+    .navleft {
+        padding-left: 10px;
+    }
+
+    .navleft a {
+        text-decoration: none;
+        color: #DB4444;
+        font-size: 16px;
+        font-weight: bolder;
+        word-spacing: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .navright ul {
+        display: none;
+    }
+
+    .navright ul a {
+        display: none;
+    }
+
+    .menu input {
+        display: none;
+    }
+
+    .menu i {
+        display: none;
+    }
+
+    .menuz i {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        margin: auto;
+    }
+
+    .prodects {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .prodect {
+        width: 100%;
+    }
+
+    .prodect:hover {
+        transform: scale(0.5);
+        margin: 20px;
+    }
+
+    .view button {
+        margin-left: 20px;
+    }
+
+    .catagorys {
+        flex-direction: column;
+    }
+
+    .catagory {
+        width: 100%;
+    }
+
+    .catagoryy {
+        width: 100%;
+    }
+
+    .prodectss {
+        flex-direction: column;
+    }
+
+    .prodectt {
+        width: 100%;
+    }
+
+    .prodectt:hover {
+        transform: scale(0.5);
+        margin: 20px;
+    }
+
+    .Featureds {
+        flex-direction: column;
+    }
+
+    .fett {
+        width: 100%;
+    }
+
+    .contactus {
+        flex-direction: column;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .endd h4 {
+        text-align: center;
+    }
+
+    .endd h6 {
+        text-align: center;
+    }
+
+    .foots {
+        flex-direction: column;
+    }
+
+    .foot {
+        width: 100%;
+    }
+
+    .foot p {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (min-width : 481px) and (max-width: 1089px) {
+    .navleft {
+        padding-left: 10px;
+    }
+
+    .navleft a {
+        text-decoration: none;
+        color: #DB4444;
+        font-size: 16px;
+        font-weight: bolder;
+        word-spacing: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .navright ul {
+        display: none;
+    }
+
+    .navright ul a {
+        display: none;
+    }
+
+    .menu input {
+        display: none;
+    }
+
+    .menu i {
+        display: none;
+    }
+
+    .menuz i {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        margin: auto;
+    }
+
+    .prodects {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .prodect {
+        width: 100%;
+    }
+
+    .prodect:hover {
+        transform: scale(0.5);
+        margin: 20px;
+    }
+
+    .view button {
+        margin-left: 20px;
+    }
+
+    .catagorys {
+        flex-direction: column;
+    }
+
+    .catagory {
+        width: 100%;
+    }
+
+    .catagoryy {
+        width: 100%;
+    }
+
+    .prodectss {
+        flex-direction: column;
+    }
+
+    .prodectt {
+        width: 100%;
+    }
+
+    .prodectt:hover {
+        transform: scale(0.5);
+        margin: 20px;
+    }
+
+    .Featureds {
+        flex-direction: column;
+    }
+
+    .fett {
+        width: 100%;
+    }
+
+    .contactus {
+        flex-direction: column;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .endd h4 {
+        text-align: center;
+    }
+
+    .endd h6 {
+        text-align: center;
+    }
+
+    .foots {
+        flex-direction: column;
+    }
+
+    .foot {
+        width: 100%;
+    }
+
+    .foot p {
+        text-align: center;
+    }
+
+}
