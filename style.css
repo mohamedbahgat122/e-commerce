@@ -613,6 +613,9 @@ footer {
     .navleft {
         padding-left: 10px;
     }
+    body {
+       overflow-x: hidden;
+    }
 
     .navleft a {
         text-decoration: none;
